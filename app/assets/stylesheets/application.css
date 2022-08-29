@@ -1,0 +1,302 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+.app_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list {
+  width: 50%;
+}
+
+.user {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user a {
+  text-decoration: none;
+  color: #000;
+}
+
+.user_details {
+  display: flex;
+  gap: 20px;
+}
+
+.user_photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.user_name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user_name h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.user_name h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0;
+  text-align: right;
+}
+
+.user_bio {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user_posts {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user_posts h4 {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.btn_bottom {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn_all_posts {
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.user_comments {
+  padding-left: 20px;
+}
+
+.post_details {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post_details_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_create_post {
+  display: flex;
+  justify-content: right;
+  margin-top: 5px;
+}
+
+.btn_post_new {
+  font-size: 0.8em;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff !important;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.post_form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post_form h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.post_form_element {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.input_from {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.textarea_from {
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.btn_submit_from {
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.comment_form_element {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.comment_from {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.btn_submit_like_from {
+  width: fit-content;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.like_form_element {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sign_out {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+}
+
+.btn_signout_from {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.btn_delete {
+  display: flex;
+  justify-content: right;
+}
+
+.btn_delete_post {
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.user_comment_element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.btn_delete_comment {
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
